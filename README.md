@@ -14,10 +14,15 @@ This is an _experimental_ Mach library, according to our [stability guarantees](
 
 ### Adding dependency
 
-In a `libs` subdirectory of the root of your project:
+Add mach-basisu as a dependency in your `build.zig.zon`:
 
-```sh
-git clone https://github.com/hexops/mach-basisu
+```zig
+.dependencies = .{
+    .mach_basisu = .{
+        .url = "https://github.com/hexops/mach-basisu/archive/<current commit hash>.tar.gz",
+        .hash = "<get this by running zig build without the hash field>",
+    },
+}
 ```
 
 Then in your `build.zig` add:
@@ -28,7 +33,10 @@ const basisu = @import("libs/mach-basisu/build.zig");
 
 pub fn build(b: *Build) void {
     ...
-    exe.addModule("basisu", basisu.module(b));
+    exe.addModule("basisu", b.dependency("mach_basisu", .{
+        .target = target,
+        .optimize = optimize,
+    }).module("mach-basisu"));
     basisu.link(b, exe, .{});
 }
 ```
