@@ -1,5 +1,5 @@
-#include <basisu_comp.h>
-#include <basisu_enc.h>
+#include <encoder/basisu_comp.h>
+#include <encoder/basisu_enc.h>
 #include <cstdbool>
 #include <cstdint>
 
