@@ -4,8 +4,8 @@
 
     .dependencies = .{
         .basisu = .{
-            .url = "https://github.com/hexops/basisu/archive/ad3a9e3964d5f4567d50e4648759fc487b8b0323.tar.gz",
-            .hash = "12203a109cd04861a1504785b0d98b480af61da41f6e80dff0b0c652e75cd287c6d1",
+            .url = "https://github.com/hexops/basisu/archive/366bb1d3ff158a03654c759adfff1ab3c753eaac.tar.gz",
+            .hash = "12202789a70bcc44ea62cd2256f76468e9c98c8e5416087e1545139db451c7a0fe73",
         },
     },
 }
