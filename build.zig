@@ -28,6 +28,8 @@ pub fn build(b: *Build) void {
         "src/transcoder/wrapper.cpp",
     }, &.{});
 
+    b.installArtifact(lib);
+
     const test_exe = b.addTest(.{
         .root_source_file = .{ .path = "src/main.zig" },
         .target = target,
