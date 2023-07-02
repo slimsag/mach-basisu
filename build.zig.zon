@@ -1,11 +1,10 @@
 .{
     .name = "mach-basisu",
     .version = "0.0.0",
-
     .dependencies = .{
         .basisu = .{
-            .url = "https://github.com/hexops/basisu/archive/366bb1d3ff158a03654c759adfff1ab3c753eaac.tar.gz",
-            .hash = "12202789a70bcc44ea62cd2256f76468e9c98c8e5416087e1545139db451c7a0fe73",
+            .url = "https://github.com/hexops/basisu/archive/72cf42e95b9ff0258bd427ff96f7b70139d631f5.tar.gz",
+            .hash = "122044a43c075d9357bff82ab66358e95e29ef01197fcb8c650489abd83511e41d2f",
         },
     },
 }
