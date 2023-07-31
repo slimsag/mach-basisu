@@ -3,7 +3,7 @@
     .version = "0.0.0",
     .dependencies = .{
         .basisu = .{
-            .url = "https://github.com/hexops/basisu/archive/72cf42e95b9ff0258bd427ff96f7b70139d631f5.tar.gz",
+            .url = "https://pkg.machengine.org/basisu/72cf42e95b9ff0258bd427ff96f7b70139d631f5.tar.gz",
             .hash = "122044a43c075d9357bff82ab66358e95e29ef01197fcb8c650489abd83511e41d2f",
         },
     },
