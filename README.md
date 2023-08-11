@@ -1,49 +1,27 @@
-# mach/basisu - basis universal (supercompressed textures) for Zig
+<a href="https://machengine.org/pkg/mach-basisu">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://machengine.org/assets/mach/basisu-full-dark.svg">
+        <img alt="mach-basisu" src="https://machengine.org/assets/mach/basisu-full-light.svg" height="150px">
+    </picture>
+</a>
 
-This repository is a separate copy of the same library in the [main Mach repository](https://github.com/hexops/mach), and is automatically kept in sync, so that anyone can use this library in their own project if they like!
+basis universal (supercompressed textures) for Zig
 
 ## Experimental
 
-This is an _experimental_ Mach library, according to our [stability guarantees](https://machengine.org/next/docs/libs/):
+This is an **experimental** project according to [our stability guarantees](https://machengine.org/about/stability):
 
-> Experimental libraries may have their APIs change without much notice, and you may have to look at recent changes in order to update your code.
+> When a project has an experimental warning, it means all bets are off. You should carefully read the warning to understand why the project is experimental, and assume the worst.
 
-[Why this library is not declared stable yet](https://machengine.org/next/docs/libs/experimental/#basisu)
+**Tracking issue:** https://github.com/hexops/mach/issues/965
 
-## Getting started
+## Documentation
 
-### Adding dependency
-
-Add mach-basisu as a dependency in your `build.zig.zon`:
-
-```zig
-.dependencies = .{
-    .mach_basisu = .{
-        .url = "https://github.com/hexops/mach-basisu/archive/<current commit hash>.tar.gz",
-        .hash = "<get this by running zig build without the hash field>",
-    },
-}
-```
-
-Then in your `build.zig` add:
-
-```zig
-...
-const basisu = @import("libs/mach-basisu/build.zig");
-
-pub fn build(b: *Build) void {
-    ...
-    exe.addModule("basisu", b.dependency("mach_basisu", .{
-        .target = target,
-        .optimize = optimize,
-    }).module("mach-basisu"));
-    basisu.link(b, exe, .{});
-}
-```
+[machengine.org/pkg/mach-basisu](https://machengine.org/pkg/mach-basisu)
 
 ## Join the community
 
-Join the Mach community [on Discord](https://discord.gg/XNG3NZgCqp) to discuss this project, ask questions, get help, etc.
+Join the [Mach community on Discord](https://discord.gg/XNG3NZgCqp) to discuss this project, ask questions, get help, etc.
 
 ## Issues
 
