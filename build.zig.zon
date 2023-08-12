@@ -3,8 +3,8 @@
     .version = "0.0.0",
     .dependencies = .{
         .basisu = .{
-            .url = "https://pkg.machengine.org/basisu/de74bd8cbf917f859cb61aafa0e4a128ec4718ab.tar.gz",
-            .hash = "122099b6de5a409198710ade9c1daa7b8b62fdd043edf22dc7187b6e737b05a49b48",
+            .url = "https://pkg.machengine.org/basisu/466d366ade2910ea578ce8ec8639ee0895ad593d.tar.gz",
+            .hash = "1220e4878b1173691126ee984f0a152fb1f75e392accba6e87b064ce8da432e4650f",
         },
     },
 }
