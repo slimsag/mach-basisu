@@ -18,10 +18,10 @@ pub fn build(b: *Build) void {
     lib.linkLibCpp();
     link(b, lib);
 
-    lib.addCSourceFiles(&.{
+    lib.addCSourceFiles(.{ .files = &.{
         "src/encoder/wrapper.cpp",
         "src/transcoder/wrapper.cpp",
-    }, &.{});
+    }, .flags = &.{} });
 
     b.installArtifact(lib);
 
