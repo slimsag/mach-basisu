@@ -41,7 +41,7 @@ test "encode/transcode" {
     const trans = try Transcoder.init(comp.output());
     defer trans.deinit();
 
-    var out_buf = try testing.allocator.alloc(u8, try trans.calcTranscodedSize(0, 0, .astc_4x4_rgba));
+    const out_buf = try testing.allocator.alloc(u8, try trans.calcTranscodedSize(0, 0, .astc_4x4_rgba));
     defer testing.allocator.free(out_buf);
     try trans.transcode(out_buf, 0, 0, .astc_4x4_rgba, .{});
 }
