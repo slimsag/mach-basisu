@@ -12,8 +12,8 @@
     },
     .dependencies = .{
         .basisu = .{
-            .url = "https://pkg.machengine.org/basisu/3490ab25a19d7fdb9ddb0cc924d44204f0e6a940.tar.gz",
-            .hash = "122025ad0448f4c1234002cc242d2497cb8649bdefb279411589f3a355a6db3f4bf7",
+            .url = "https://pkg.machengine.org/basisu/9955d030f37102b60d016fa4118ccb7f3a0e2f54.tar.gz",
+            .hash = "1220da74ddbae5ccae5d0141e747023039488f266b98e7ceb860015f95b2dd10c650",
         },
     },
 }
